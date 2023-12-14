@@ -6,6 +6,7 @@ namespace Models
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string email { get; set; }
-        public string specialty { get; set; }
+        public Category mainSpecialty { get; set; }
+        public ICollection<Category> specialties { get; set; }
     }    
 }
